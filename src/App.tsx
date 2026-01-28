@@ -1,11 +1,13 @@
-import "./App.css";
-
-function App() {
+import { useEffect, useState } from "react";
+import Header from "./components/Header.tsx";
+const App = () => {
   return (
-    <>
-      <div className="w-[100px] h-[100px] bg-red-500">12</div>
-    </>
+    <main>
+      <div className="wrapper">
+        <Header></Header>
+      </div>
+    </main>
   );
-}
+};
 
 export default App;
