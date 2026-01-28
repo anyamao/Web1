@@ -1,38 +1,44 @@
 @import "tailwindcss";
 
-@layer components {
-  .wrapper {
-    @apply min-w-screen min-h-screen flex justify-center;
-  }
-  .avatar {
-    @apply w-[30px] h-[30px] rounded-full absolute mt-[5px] right-0;
-  }
-  .header-container {
-    @apply w-screen h-[40px]   flex flex-col border-b-[2px] border-b-[#f0edeb] items-center justify-center;
-  }
-  .header-content {
-    @apply flex justify-center items-center relative  mt-[-5px] min-w-[480px] max-w-[1400px] w-6/7;
-  }
-  .navigation-container {
-    @apply flex flex-row justify-around absolute w-1/2 max-w-[270px]  mt-[7px];
-  }
-  .navigation-element {
-    @apply hover:border-b-[1px] border-b-[#a1633a] transition-all duration-300;
-  }
-}
-
 * {
   font-family: "Sour Gummy";
   font-size: 12px;
   color: #a1633a;
 }
-body {
-  width: 100vw;
-  heigh: 100vw;
-  display: flex;
-  background-color: #ffffff;
-}
 
-.comic-relief {wTimer
-  font-family: "Comic Relief";
+@layer components {
+  .wrapper {
+    @apply min-w-screen min-h-screen flex flex-col items-center;
+  }
+  .content-wrapper {
+    @apply min-w-[480px] max-w-[1400px] w-6/7 flex;
+  }
+  .avatar {
+    @apply w-[30px] h-[30px] rounded-full absolute mt-[5px] right-0;
+  }
+  .header-container {
+    @apply w-screen h-[40px]  z-10 flex flex-col border-b-[2px] border-b-[#f0edeb] items-center justify-center;
+  }
+  .header-content {
+    @apply flex justify-center  z-20 items-center relative  mt-[-5px] min-w-[480px] max-w-[1400px] w-6/7;
+  }
+  .navigation-container {
+    @apply flex flex-row justify-around z-20 absolute w-1/2 max-w-[270px]  mt-[7px];
+  }
+  .navigation-element {
+    @apply hover:border-b-[1px] text-[12px] text-["#1633a"]  z-20 border-b-[#a1633a] transition-all duration-300;
+  }
+
+  .window {
+    @apply w-[700px] h-[400px] bg-pink-100 outline-[2px] outline-pink-200 mt-[10px]  flex flex-row rounded-[5px] overflow-hidden;
+  }
+  .right-panel {
+    @apply w-[35px] flex flex-col items-center pt-[8px];
+  }
+  .name {
+    @apply flex items-center justify-center relative w-full mx-[50px] max-w-[330px] h-[20px];
+  }
+  .icon {
+    @apply w-[17px] h-[17px] hover:scale-110 transition-transform transition-all duration-300  opacity-50 cursor-pointer my-[3px];
+  }
 }
