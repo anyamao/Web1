@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import Header from "./components/Header.tsx";
-import NoteSingle from "./components/NoteSingle.tsx";
-import NoteCreation from "./components/NoteCreation.tsx";
-const App = () => {
+import Header from "../../components/Header.tsx";
+import NoteSingle from "./NoteSingle.tsx";
+import NoteCreation from "./NoteCreation.tsx";
+import "./timer.css";
+const Timer = () => {
   return (
     <main>
       <div className="wrapper">
@@ -16,4 +17,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Timer;
