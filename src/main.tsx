@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./styles/index.css";
 import Timer from "./pages/Timer/Timer.tsx";
 import Notes from "./pages/Notes/Notes.tsx";
-
+import NotFound from "./pages/NotFoundPage/NotFound.tsx";
 const router = createBrowserRouter([
   {
     path: "/timer",
@@ -13,6 +13,10 @@ const router = createBrowserRouter([
   {
     path: "/notes",
     element: <Notes />,
+  },
+  {
+    path: "*",
+    element: <NotFound></NotFound>,
   },
 ]);
 
