@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Header from "./components/Header.tsx";
 import NoteSingle from "./components/NoteSingle.tsx";
+import NoteCreation from "./components/NoteCreation.tsx";
 const App = () => {
   return (
     <main>
@@ -9,6 +10,7 @@ const App = () => {
         <div className="content-wrapper">
           <NoteSingle></NoteSingle>
         </div>
+        <NoteCreation></NoteCreation>
       </div>
     </main>
   );

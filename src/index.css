@@ -2,8 +2,6 @@
 
 * {
   font-family: "Sour Gummy";
-  font-size: 12px;
-  color: #a1633a;
 }
 
 @layer components {
@@ -23,22 +21,33 @@
     @apply flex justify-center  z-20 items-center relative  mt-[-5px] min-w-[480px] max-w-[1400px] w-6/7;
   }
   .navigation-container {
-    @apply flex flex-row justify-around z-20 absolute w-1/2 max-w-[270px]  mt-[7px];
+    @apply flex flex-row justify-around z-20 absolute text-[12px] text-[#1633a] w-1/2 max-w-[300px]  mt-[7px];
   }
   .navigation-element {
-    @apply hover:border-b-[1px] text-[12px] text-["#1633a"]  z-20 border-b-[#a1633a] transition-all duration-300;
+    @apply hover:border-b-[1px] text-[12px] text-[#a1633a]  z-20 border-b-[#a1633a] transition-all duration-300;
+  }
+
+  .normal-text {
+    @apply text-[#a1633a] text-[12px];
+  }
+  .smaller-text {
+    @apply text-[10px] text-[#a1633a];
   }
 
   .window {
-    @apply w-[700px] h-[400px] bg-pink-100 outline-[2px] outline-pink-200 mt-[10px]  flex flex-row rounded-[5px] overflow-hidden;
+    @apply w-[700px] h-[400px] text-[12px] text-[#a1633a] bg-pink-100 outline-[2px] outline-pink-200 mt-[10px]  flex flex-row rounded-[5px] overflow-hidden;
   }
   .right-panel {
     @apply w-[35px] flex flex-col items-center pt-[8px];
   }
   .name {
-    @apply flex items-center justify-center relative w-full mx-[50px] max-w-[330px] h-[20px];
+    @apply flex items-center text-[12px] text-[#a1633a] justify-center relative w-full mx-[50px] max-w-[330px] h-[20px];
   }
   .icon {
     @apply w-[17px] h-[17px] hover:scale-110 transition-transform transition-all duration-300  opacity-50 cursor-pointer my-[3px];
+  }
+
+  .creating-icon {
+    @apply w-[20px] h-[20px] hover:scale-110 transition-all duration-300;
   }
 }
