@@ -5,12 +5,13 @@ import {
   X,
   Plus,
   CirclePlus,
+  Trash2,
   TextAlignJustify,
 } from "lucide-react";
 
 const NoteSingle = () => {
   return (
-    <div className="w-[700px] h-[400px] bg-pink-100 outline-[2px] outline-pink-200 mt-[10px]  flex flex-row rounded-[5px] overflow-hidden">
+    <div className=" text-[12px] text-[#a1633a] w-[700px] h-[400px] bg-pink-100 outline-[2px] outline-pink-200 mt-[10px]  flex flex-row rounded-[5px] overflow-hidden">
       <div className="bg-pink-200 w-[35px] flex flex-col items-center pt-[8px]">
         <PanelRight className="icon"></PanelRight>
         <Search className="icon mt-[7px]"></Search>
